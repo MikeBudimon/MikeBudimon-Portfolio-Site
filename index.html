@@ -5,10 +5,172 @@
     <title>Michal Wagner Portfolio Seite</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
+    <script src="https://use.fontawesome.com/05a755ff73.js" async></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js " integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7 "
+        crossorigin="anonymous " async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js " integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8 "
+        crossorigin="anonymous " async></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js " integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK "
+        crossorigin="anonymous " async></script>
+
+    <nav class="navbar navbar-fixed-top navbar-light bg-faded">
+        <div class="container">
+            <button class="navbar-toggler hidden-sm-up collapsed float-xs-right" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar">
+                <a class="navbar-brand" href="#">Michal Wagner</a>
+                <ul class="nav navbar-nav float-xs-right">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Über Mich</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontakt">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- navbar -->
+    <div class="container-fluid text-xs-center bg-1">
+        <h1 id="home" class="margin-bottom">Das Portfolio von <span class="highlight-font">Michal Wagner</span></h1>
+        <img src="img/myself.jpg" id="img-myself" class="img-fluid rounded-circle margin-bottom" alt="Myself">
+        <h1 class="margin-bottom"><span class="highlight-font">Software-/Webentwickler</span> aus Oberhausen</h1>
+    </div>
+
+    <!-- About section -->
+    <div class="container-fluid bg-2">
+        <div class="container text-xs-center">
+            <h1 id="about" class="margin-bottom">Über mich</h1>
+            <p>Hallo! Ich bin Michal Wagner und zurzeit studiere an der Hochschule Ruhr West in Bottrop und werde vorraussichtlich
+                2017 den Bachelor Sc. in Energieinformatik und 2019 den Master Sc. in Informatik erwerben. Meine Leidenschaft
+                liegt in der Entwicklung, Programmierung und Planung von Software. Ich habe sehr viel Spaß in einem gemeinschaftlichen
+                Team zu arbeiten.
+            </p>
+        </div>
+    </div>
+
+    <!-- Portfolio section -->
+    <div class="container-fluid bg-3">
+        <div class="container-fluid text-xs-center">
+            <h1 id="portfolio" class="margin-bottom">Portfolio</h1>
+            <div class="row">
+                <div class="card bg-faded col-lg-5 offset-lg-1">
+                    <div class="card-block">
+                        <h2 class="card-title">WeatherStationPi</h2>
+                    </div>
+                    <img src="img/WeatherstationPi.png" class="img-fluid img-cards" alt="Card image">
+                    <div class="card-block">
+                        <p class="card-text"><b>HTML, CSS, Bootstrap, Javascript, MySQL, Java</b></p>
+                        <p>adasdsadsadsad</p>
+                        <p class="text-xs-center">
+                            <a href=""><i class="fa fa-globe fa-3x fa-projects" aria-hidden="true"></i></a>
+                            <span>&nbsp;</span>
+                            <a href=""><i class="fa fa-github fa-3x fa-projects" aria-hidden="true"></i></a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card bg-faded col-lg-5">
+                    <div class="card-block">
+                        <h2 class="card-title">RaspiRobotControl Server</h2>
+                    </div>
+                    <img src="img/RPI_Robot_2.jpg" class="img-fluid img-cards" alt="Card image">
+                    <div class="card-block">
+                        <p class="card-text"><b>Java, Websocket</b></p>
+                        <p>asdsadasdas</p>
+                        <p class="text-xs-center"><a href=""><i class="fa fa-github fa-3x fa-projects" aria-hidden="true"></i></a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card bg-faded col-lg-5 offset-lg-1">
+                    <div class="card-block">
+                        <h2 class="card-title">RaspiRobotControl JavaFX Client</h2>
+                    </div>
+                    <img src="img/rpi_JavaFX2.png" class="img-fluid img-cards" alt="Card image">
+                    <div class="card-block">
+                        <p class="card-text"><b>Java, JavaFX</b></p>
+                        <p>asdsadasdas</p>
+                        <p class="text-xs-center"><a href=""><i class="fa fa-github fa-3x fa-projects" aria-hidden="true"></i></a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card bg-faded col-lg-5">
+                    <div class="card-block">
+                        <h2 class="card-title">RaspiRobotControl Android Client</h2>
+                    </div>
+                    <img src="img/RPI_Client_Android.png" class="img-fluid img-cards" alt="Card image">
+                    <div class="card-block">
+                        <p class="card-text"><b>Android, Java</b></p>
+                        <p>asdsadasdas</p>
+                        <p class="text-xs-center"><a href=""><i class="fa fa-github fa-3x fa-projects" aria-hidden="true"></i></a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card bg-faded col-lg-5 offset-lg-1">
+                    <div class="card-block">
+                        <h2 class="card-title">Hangdroid</h2>
+                    </div>
+                    <img src="img/Hangdroid.png" class="img-fluid img-cards" alt="Card image">
+                    <div class="card-block">
+                        <p class="card-text"><b>Android, Java</b></p>
+                        <p>asdsadasdas</p>
+                        <p class="text-xs-center"><a href=""><i class="fa fa-github fa-3x fa-projects" aria-hidden="true"></i></a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card bg-faded col-lg-5">
+                    <div class="card-block">
+                        <h2 class="card-title">Diese Portfolio Seite</h2>
+                    </div>
+                    <img src="img/MyPortfolio.png" class="img-fluid img-cards" alt="Card image">
+                    <div class="card-block">
+                        <p class="card-text"><b>HTML, CSS, Bootstrap</b></p>
+                        <p>asdsadasdas</p>
+                        <p class="text-xs-center">
+                            <a href=""><i class="fa fa-github fa-3x fa-projects" aria-hidden="true"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kontakt section -->
+    <div class="container-fluid bg-2">
+        <div class="container  ">
+            <h1 id="kontakt" class="margin-bottom text-xs-center">Kontakt</h1>
+            <div class="row">
+                <a href="mailto:mikebudimon@gmail.com"><i class="fa fa-links fa-envelope fa-3x col-sm-1 offset-sm-4" aria-hidden="true"></i></a>
+                <a href="https://github.com/MikeBudimon"><i class="fa fa-links fa-github fa-3x col-sm-1" aria-hidden="true"></i></a>
+                <a href="google.de"><i class="fa fa-links fa-xing fa-3x col-sm-1" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/michal-wagner-02a713125?trk=hp-identity-name"><i class="fa fa-links fa-linkedin fa-3x col-sm-1" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="navbar text-xs-center bg-4">
+        <p>Copyright by Michal Wagner</p>
+    </footer>
 
 </body>
 

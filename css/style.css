@@ -1,0 +1,81 @@
+.bg-1 {
+    background-color: #1abc9c; /* Green */
+    color: #ffffff; /* Font */
+}
+
+.bg-2 {
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+}
+
+.bg-3 {
+    background-color: #ffffff; /* White */
+    color: #555555;
+}
+
+.bg-4.navbar {
+    background-color: #2f2f2f;
+    color: #ffffff;
+    letter-spacing: 0px;
+    font-size: 15px;
+}
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    letter-spacing: 3px;
+}
+
+.navbar-nav li a:hover {
+    color: #1abc9c !important;
+}
+
+.margin-bottom {
+    margin-bottom: 45px;
+}
+
+#img-myself {
+    height: auto;
+    width: auto;
+    max-width: 300px;
+}
+
+h1 {
+    font-family: "Lobster", cursive;
+}
+
+#home {
+    padding-top: 70px;
+}
+
+.highlight-font {
+    color: #FFA85A;
+}
+
+.fa.fa-projects {
+    color: #555555;
+}
+
+.fa.fa-links {
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.row a i:hover {
+    color: #1abc9c !important;
+}
+
+.img-cards {
+    height: auto;
+    width: auto;
+    max-height: 400px;
+}
+
+.card {
+    margin-right: 10px;
+}
