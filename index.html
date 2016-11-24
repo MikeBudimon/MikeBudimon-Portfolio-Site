@@ -21,6 +21,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js " integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK "
         crossorigin="anonymous " async></script>
 
+    <!-- navbar -->
     <nav class="navbar navbar-fixed-top navbar-light bg-faded">
         <div class="container">
             <button class="navbar-toggler hidden-sm-up collapsed float-xs-right" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar"
@@ -45,7 +46,7 @@
         </div>
     </nav>
 
-    <!-- navbar -->
+    <!-- Start section -->
     <div class="container-fluid text-xs-center bg-1">
         <h1 id="home" class="margin-bottom">Das Portfolio von <span class="highlight-font">Michal Wagner</span></h1>
         <img src="img/myself.jpg" id="img-myself" class="img-fluid rounded-circle margin-bottom" alt="Myself">
@@ -68,87 +69,96 @@
     <div class="container-fluid bg-3">
         <div class="container-fluid text-xs-center">
             <h1 id="portfolio" class="margin-bottom">Portfolio</h1>
-            <div class="row">
-                <div class="card bg-faded col-lg-5 offset-lg-1">
-                    <div class="card-block">
-                        <h2 class="card-title">WeatherStationPi</h2>
-                    </div>
-                    <img src="img/WeatherstationPi.png" class="img-fluid img-cards" alt="Card image">
-                    <div class="card-block">
-                        <p class="card-text"><b>HTML, CSS, Bootstrap, Javascript, MySQL, Java</b></p>
-                        <p>adasdsadsadsad</p>
-                        <p class="text-xs-center">
-                            <a href=""><i class="fa fa-globe fa-3x fa-projects" aria-hidden="true"></i></a>
-                            <span>&nbsp;</span>
-                            <a href=""><i class="fa fa-github fa-3x fa-projects" aria-hidden="true"></i></a>
-                        </p>
-                    </div>
-                </div>
 
-                <div class="card bg-faded col-lg-5">
-                    <div class="card-block">
-                        <h2 class="card-title">RaspiRobotControl Server</h2>
-                    </div>
-                    <img src="img/RPI_Robot_2.jpg" class="img-fluid img-cards" alt="Card image">
-                    <div class="card-block">
-                        <p class="card-text"><b>Java, Websocket</b></p>
-                        <p>asdsadasdas</p>
-                        <p class="text-xs-center"><a href=""><i class="fa fa-github fa-3x fa-projects" aria-hidden="true"></i></a>
-                        </p>
-                    </div>
+            <div class="card bg-faded col-lg-5 offset-lg-1">
+                <div class="card-block">
+                    <h2 class="card-title">WeatherStationPi</h2>
                 </div>
-
-                <div class="card bg-faded col-lg-5 offset-lg-1">
-                    <div class="card-block">
-                        <h2 class="card-title">RaspiRobotControl JavaFX Client</h2>
-                    </div>
-                    <img src="img/rpi_JavaFX2.png" class="img-fluid img-cards" alt="Card image">
-                    <div class="card-block">
-                        <p class="card-text"><b>Java, JavaFX</b></p>
-                        <p>asdsadasdas</p>
-                        <p class="text-xs-center"><a href=""><i class="fa fa-github fa-3x fa-projects" aria-hidden="true"></i></a>
-                        </p>
-                    </div>
+                <img src="img/WeatherstationPi.png" class="img-fluid img-cards" alt="Card image">
+                <div class="card-block">
+                    <p class="card-text"><b>HTML, CSS, Bootstrap, Javascript, MySQL, Java</b></p>
+                    <p class="card-text">WeatherStationPi empfängt Wetterdaten aus OpenWeatherMap und einem Sensor der direkt an einen Raspberry
+                        Pi 2 angeschlossen ist und stellt sie auf einer Website grafisch dar. Mehr Informationen sind auf
+                        Github zu finden.</p>
+                    <p class="text-xs-center">
+                        <a href=""><i class="fa fa-globe fa-3x fa-projects" aria-hidden="true"></i></a>
+                        <span>&nbsp;</span>
+                        <a href="https://github.com/MikeBudimon/WeatherStationPi"><i class="fa fa-github fa-3x fa-projects" aria-hidden="true"></i></a>
+                    </p>
                 </div>
+            </div>
 
-                <div class="card bg-faded col-lg-5">
-                    <div class="card-block">
-                        <h2 class="card-title">RaspiRobotControl Android Client</h2>
-                    </div>
-                    <img src="img/RPI_Client_Android.png" class="img-fluid img-cards" alt="Card image">
-                    <div class="card-block">
-                        <p class="card-text"><b>Android, Java</b></p>
-                        <p>asdsadasdas</p>
-                        <p class="text-xs-center"><a href=""><i class="fa fa-github fa-3x fa-projects" aria-hidden="true"></i></a>
-                        </p>
-                    </div>
+            <div class="card bg-faded col-lg-5">
+                <div class="card-block">
+                    <h2 class="card-title">RaspiRobotControl Server</h2>
                 </div>
-
-                <div class="card bg-faded col-lg-5 offset-lg-1">
-                    <div class="card-block">
-                        <h2 class="card-title">Hangdroid</h2>
-                    </div>
-                    <img src="img/Hangdroid.png" class="img-fluid img-cards" alt="Card image">
-                    <div class="card-block">
-                        <p class="card-text"><b>Android, Java</b></p>
-                        <p>asdsadasdas</p>
-                        <p class="text-xs-center"><a href=""><i class="fa fa-github fa-3x fa-projects" aria-hidden="true"></i></a>
-                        </p>
-                    </div>
+                <img src="img/RPI_Robot_2.jpg" class="img-fluid img-cards" alt="Card image">
+                <div class="card-block">
+                    <p class="card-text"><b>Java, Websocket</b></p>
+                    <p class="card-text">RaspiRobotControl-Server liest, führt Befehle wie z.B. links Abbiegen, Anhalten, Soundbuzzer aktivieren
+                        von einen verbundenen Client aus und sendet Mithilfe des Ultraschallsensors die ungefähre Entfernung
+                        zum nächsten Objekt und den Kamerastream an den Client.</p>
+                    <p class="text-xs-center"><a href="https://github.com/MikeBudimon/RaspiRobotControl-Server"><i class="fa fa-github fa-3x fa-projects" aria-hidden="true"></i></a>
+                    </p>
                 </div>
+            </div>
 
-                <div class="card bg-faded col-lg-5">
-                    <div class="card-block">
-                        <h2 class="card-title">Diese Portfolio Seite</h2>
-                    </div>
-                    <img src="img/MyPortfolio.png" class="img-fluid img-cards" alt="Card image">
-                    <div class="card-block">
-                        <p class="card-text"><b>HTML, CSS, Bootstrap</b></p>
-                        <p>asdsadasdas</p>
-                        <p class="text-xs-center">
-                            <a href=""><i class="fa fa-github fa-3x fa-projects" aria-hidden="true"></i></a>
-                        </p>
-                    </div>
+            <div class="card bg-faded col-lg-5 offset-lg-1">
+                <div class="card-block">
+                    <h2 class="card-title">RaspiRobotControl JavaFX Client</h2>
+                </div>
+                <img src="img/rpi_JavaFX2.png" class="img-fluid img-cards" alt="Card image">
+                <div class="card-block">
+                    <p class="card-text"><b>Java, JavaFX</b></p>
+                    <p class="card-text">Diese JavaFX Desktop Application ermöglicht die Verbindung zu den RaspiRobot um gleichzeitig den Roboter
+                        Fahrbefehle zu senden, Ultraschallsensordaten zu empfangen und darstellen und den Kamera's Videostream
+                        anzuzeigen.
+                    </p>
+                    <p class="text-xs-center"><a href="https://github.com/MikeBudimon/RaspiRobotControl-JavaFX-Client"><i class="fa fa-github fa-3x fa-projects" aria-hidden="true"></i></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card bg-faded col-lg-5">
+                <div class="card-block">
+                    <h2 class="card-title">RaspiRobotControl Android Client</h2>
+                </div>
+                <img src="img/RPI_Client_Android.png" class="img-fluid img-cards" alt="Card image">
+                <div class="card-block">
+                    <p class="card-text"><b>Android, Java</b></p>
+                    <p class="card-text">Diese Android Application ermöglicht die Verbindung zu den RaspiRobot um gleichzeitig den Roboter Fahrbefehle
+                        zu senden, Ultraschallsensordaten zu empfangen und darstellen und den Kamera's Videostream anzuzeigen.
+                    </p>
+                    <p class="text-xs-center"><a href="https://github.com/MikeBudimon/RaspiRobotControl-Android-Client"><i class="fa fa-github fa-3x fa-projects" aria-hidden="true"></i></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card bg-faded col-lg-5 offset-lg-1">
+                <div class="card-block">
+                    <h2 class="card-title">Hangdroid</h2>
+                </div>
+                <img src="img/Hangdroid.png" class="img-fluid img-cards" alt="Card image">
+                <div class="card-block">
+                    <p class="card-text"><b>Android, Java</b></p>
+                    <p class="card-text">Hangdroid ist ein Android Klon von den berühmten Spiel Hangman bzw. Hängemännchen.</p>
+                    <p class="text-xs-center"><a href="https://github.com/MikeBudimon/HangDroid"><i class="fa fa-github fa-3x fa-projects" aria-hidden="true"></i></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card bg-faded col-lg-5">
+                <div class="card-block">
+                    <h2 class="card-title">Diese Portfolio Seite</h2>
+                </div>
+                <img src="img/MyPortfolio.png" class="img-fluid img-cards" alt="Card image">
+                <div class="card-block">
+                    <p class="card-text"><b>HTML, CSS, Bootstrap</b></p>
+                    <p class="card-text">Das ist meine "Work-in-Progress" Portfolio Website die meine Projekte darstellt und im späteren Verlauf
+                        erweitert und aktualisiert wird.</p>
+                    <p class="text-xs-center">
+                        <a href="https://github.com/MikeBudimon/MikeBudimon-Portfolio-Site"><i class="fa fa-github fa-3x fa-projects" aria-hidden="true"></i></a>
+                    </p>
                 </div>
             </div>
         </div>
@@ -161,8 +171,8 @@
             <div class="row">
                 <a href="mailto:mikebudimon@gmail.com"><i class="fa fa-links fa-envelope fa-3x col-sm-1 offset-sm-4" aria-hidden="true"></i></a>
                 <a href="https://github.com/MikeBudimon"><i class="fa fa-links fa-github fa-3x col-sm-1" aria-hidden="true"></i></a>
-                <a href="google.de"><i class="fa fa-links fa-xing fa-3x col-sm-1" aria-hidden="true"></i></a>
                 <a href="https://www.linkedin.com/in/michal-wagner-02a713125?trk=hp-identity-name"><i class="fa fa-links fa-linkedin fa-3x col-sm-1" aria-hidden="true"></i></a>
+                <a href="google.de"><i class="fa fa-links fa-xing fa-3x col-sm-1" aria-hidden="true"></i></a>
             </div>
         </div>
     </div>
