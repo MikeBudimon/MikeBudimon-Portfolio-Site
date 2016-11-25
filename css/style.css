@@ -1,15 +1,19 @@
 .bg-1 {
-    background-color: #1abc9c; /* Green */
-    color: #ffffff; /* Font */
+    background-color: #1abc9c;
+    /* Green */
+    color: #ffffff;
+    /* Font */
 }
 
 .bg-2 {
-    background-color: #474e5d; /* Dark Blue */
+    background-color: #474e5d;
+    /* Dark Blue */
     color: #ffffff;
 }
 
 .bg-3 {
-    background-color: #1abc9c; /* White */
+    background-color: #1abc9c;
+    /* White */
     color: #555555;
 }
 
@@ -17,15 +21,16 @@
     color: #ffffff;
 }
 
-
 .bg-4.navbar {
     background-color: #2f2f2f;
-    color: #ffffff;
     letter-spacing: 0px;
-    font-size: 15px;
+    font-size: 90%;
+    padding-bottom: 0;
 }
 
-.container-fluid {
+.container-fluid.bg-1,
+.container-fluid.bg-2,
+.container-fluid.bg-3 {
     padding-top: 70px;
     padding-bottom: 70px;
 }
@@ -76,8 +81,8 @@ a i:hover {
 }
 
 .img-cards {
-    height: auto;
     width: auto;
+    height: auto;
     max-height: 400px;
 }
 
@@ -86,8 +91,23 @@ a i:hover {
     height: 49em;
 }
 
+
+/* if width is smaller than 768px */
+
 @media screen and (max-width: 768px) {
     .card {
         height: 100%;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+}
+
+
+/* if width is bigger than 992px */
+
+@media screen and (min-width: 992px) {
+    .img-cards {
+        height: 350px;
     }
 }
