@@ -49,6 +49,10 @@
     margin-bottom: 45px;
 }
 
+.margin-bottom-form {
+    margin-bottom: 1rem;
+}
+
 #img-myself {
     height: auto;
     width: auto;
