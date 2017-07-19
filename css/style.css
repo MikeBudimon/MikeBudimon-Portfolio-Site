@@ -59,10 +59,6 @@
     max-width: 300px;
 }
 
-h1 {
-    font-family: "Lobster", cursive;
-}
-
 #home {
     padding-top: 70px;
 }
@@ -89,6 +85,13 @@ a i:hover {
 .card {
     margin-right: 10px;
     height: 49em;
+}
+
+#about,
+#portfolio,
+#kontakt {
+    transition: 2s;
+    -webkit-transition: 2s;
 }
 
 
