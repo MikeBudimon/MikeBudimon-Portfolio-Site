@@ -59,10 +59,6 @@
     max-width: 300px;
 }
 
-h1 {
-    font-family: "Lobster", cursive;
-}
-
 #home {
     padding-top: 70px;
 }
@@ -89,6 +85,10 @@ a i:hover {
 .card {
     margin-right: 10px;
     height: 49em;
+}
+
+#home {
+    font-size: 3em;
 }
 
 
