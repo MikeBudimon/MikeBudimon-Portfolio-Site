@@ -11,9 +11,9 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="navbar-main">
     <!-- navbar -->
-    <nav class="navbar navbar-fixed-top navbar-light bg-faded">
+    <nav id="navbar-main" class="navbar navbar-fixed-top navbar-light bg-faded">
         <div class="container">
             <button class="navbar-toggler hidden-sm-up collapsed float-xs-right" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar"
                 aria-expanded="false">
@@ -43,9 +43,9 @@
 
     </div>
     <!-- About section -->
-    <div class="container-fluid bg-2">
+    <div id="about" class="container-fluid bg-2">
         <div class="container text-xs-center">
-            <h1 id="about" class="margin-bottom">Über mich</h1>
+            <h1 class="margin-bottom">Über mich</h1>
             <p>Hallo! Ich bin Michal Wagner und zurzeit studiere an der Hochschule Ruhr West in Bottrop und werde vorraussichtlich
                 2017 den Bachelor Sc. in Energieinformatik und 2019 den Master Sc. in Informatik erwerben. Meine Leidenschaft
                 liegt in der Entwicklung, Programmierung und Planung von Software. Ich habe sehr viel Spaß in einem gemeinschaftlichen
@@ -54,9 +54,9 @@
         </div>
     </div>
     <!-- Portfolio section -->
-    <div class="container-fluid bg-3">
+    <div id="portfolio" class="container-fluid bg-3">
         <div class="container-fluid text-xs-center">
-            <h1 id="portfolio" class="margin-bottom">Portfolio</h1>
+            <h1 class="margin-bottom">Portfolio</h1>
             <div class="card bg-faded col-lg-5 offset-lg-1">
                 <div class="card-block">
                     <h2 class="card-title">WeatherStationPi</h2>
@@ -146,9 +146,9 @@
         </div>
     </div>
     <!-- Kontakt section -->
-    <div class="container-fluid bg-2">
+    <div id="kontakt" class="container-fluid bg-2">
         <div class="container">
-            <h1 id="kontakt" class="margin-bottom text-xs-center">Kontakt</h1>
+            <h1 class="margin-bottom text-xs-center">Kontakt</h1>
             <div class="row text-xs-center">
                 <a href="mailto:michalwagner1993@gmail.com"><i class="fa fa-links fa-envelope fa-3x col-md-1 offset-md-4" aria-hidden="true"></i></a>
                 <a href="https://github.com/MikeBudimon"><i class="fa fa-links fa-github fa-3x col-md-1" aria-hidden="true"></i></a>

@@ -1,3 +1,7 @@
+body {
+    position: relative;
+}
+
 .bg-1 {
     background-color: #1abc9c;
     /* Green */
@@ -17,15 +21,15 @@
     color: #555555;
 }
 
-#portfolio {
-    color: #ffffff;
-}
-
 .bg-4.navbar {
     background-color: #2f2f2f;
     letter-spacing: 0px;
     font-size: 90%;
     padding-bottom: 0;
+}
+
+#portfolio h1 {
+    color: #ffffff;
 }
 
 .container-fluid.bg-1,
@@ -61,6 +65,7 @@
 
 #home {
     padding-top: 70px;
+    font-size: 3em;
 }
 
 .fa.fa-projects {
@@ -85,10 +90,6 @@ a i:hover {
 .card {
     margin-right: 10px;
     height: 49em;
-}
-
-#home {
-    font-size: 3em;
 }
 
 
