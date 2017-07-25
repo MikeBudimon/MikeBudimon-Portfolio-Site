@@ -11,17 +11,19 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body data-spy="scroll" data-target="navbar-main">
+<body>
     <!-- navbar -->
-    <nav id="navbar-main" class="navbar navbar-fixed-top navbar-light bg-faded">
+    <nav class="navbar navbar-fixed-top navbar-light bg-faded">
         <div class="container">
             <button class="navbar-toggler hidden-sm-up collapsed float-xs-right" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar"
                 aria-expanded="false">
                 ☰
             </button>
             <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar">
-                <a class="navbar-brand" href="#">Michal Wagner</a>
-                <ul class="nav navbar-nav float-md-right">
+                <ul class="nav navbar-nav float-sm-right">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Start</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">Über Mich</a>
                     </li>
@@ -36,17 +38,18 @@
         </div>
     </nav>
     <!-- Start section -->
-    <div class="container-fluid text-xs-center bg-1">
-        <h1 id="home" class="margin-bottom">Michal Wagner</h1>
+    <div id="home" class="container-fluid text-xs-center bg-1">
+        <h1 class="margin-bottom">Michal Wagner</h1>
         <img src="img/myself.jpg" id="img-myself" class="img-fluid rounded-circle margin-bottom" alt="Myself">
-        <h1 class="margin-bottom">Full Stack Software- und Webentwickler</h1>
-
+        <h2>Full Stack Software- und Webentwickler</h2>
     </div>
     <!-- About section -->
     <div id="about" class="container-fluid bg-2">
         <div class="container text-xs-center">
-            <h1 class="margin-bottom">Über mich</h1>
-            <p>Hallo! Ich bin Michal Wagner und zurzeit studiere an der Hochschule Ruhr West in Bottrop und werde vorraussichtlich
+            <h1 class="margin-bottom">Über mich
+                <hr class="small">
+            </h1>
+            <p class="text-justify">Hallo! Ich bin Michal Wagner und zurzeit studiere an der Hochschule Ruhr West in Bottrop und werde vorraussichtlich
                 2017 den Bachelor Sc. in Energieinformatik und 2019 den Master Sc. in Informatik erwerben. Meine Leidenschaft
                 liegt in der Entwicklung, Programmierung und Planung von Software. Ich habe sehr viel Spaß in einem gemeinschaftlichen
                 Team zu arbeiten.
@@ -56,7 +59,9 @@
     <!-- Portfolio section -->
     <div id="portfolio" class="container-fluid bg-3">
         <div class="container-fluid text-xs-center">
-            <h1 class="margin-bottom">Portfolio</h1>
+            <h1 class="margin-bottom">Portfolio
+                <hr class="small">
+            </h1>
             <div class="card bg-faded col-lg-5 offset-lg-1">
                 <div class="card-block">
                     <h2 class="card-title">WeatherStationPi</h2>
@@ -64,7 +69,7 @@
                 <img src="img/WeatherstationPi.png" class="img-fluid img-cards" alt="Card image">
                 <div class="card-block">
                     <p class="card-text"><b>HTML, CSS, Bootstrap, Javascript, MySQL, Java</b></p>
-                    <p class="card-text">WeatherStationPi empfängt Wetterdaten aus OpenWeatherMap und einem Sensor der direkt an einen Raspberry
+                    <p class="card-text text-justify">WeatherStationPi empfängt Wetterdaten aus OpenWeatherMap und einem Sensor der direkt an einen Raspberry
                         Pi 2 angeschlossen ist und stellt sie auf einer Website grafisch dar. Letzter Datenpunkt ist am 31.10.2016,
                         da die Umgebung von Raspberry Pi nach Github Pages umgezogen wurde.</p>
                     <p class="text-xs-center">
@@ -81,7 +86,7 @@
                 <img src="img/RPI_Robot_2.jpg" class="img-fluid img-cards" alt="Card image">
                 <div class="card-block">
                     <p class="card-text"><b>Java, Websocket</b></p>
-                    <p class="card-text">RaspiRobotControl-Server liest, führt Befehle wie z.B. links Abbiegen, Anhalten, Soundbuzzer aktivieren
+                    <p class="card-text text-justify">RaspiRobotControl-Server liest, führt Befehle wie z.B. links Abbiegen, Anhalten, Soundbuzzer aktivieren
                         von einen verbundenen Client aus und sendet Mithilfe des Ultraschallsensors die ungefähre Entfernung
                         zum nächsten Objekt und streamt den Kamerastream an den Client.</p>
                     <p class="text-xs-center"><a href="https://github.com/MikeBudimon/RaspiRobotControl-Server"><i class="fa fa-github fa-3x fa-projects" aria-hidden="true"></i></a>
@@ -95,7 +100,7 @@
                 <img src="img/rpi_JavaFX2.png" class="img-fluid img-cards" alt="Card image">
                 <div class="card-block">
                     <p class="card-text"><b>Java, JavaFX</b></p>
-                    <p class="card-text">Diese JavaFX Desktop Application ermöglicht die Verbindung zu den RaspiRobot um gleichzeitig den Roboter
+                    <p class="card-text text-justify">Diese JavaFX Desktop Application ermöglicht die Verbindung zu den RaspiRobot um gleichzeitig den Roboter
                         Fahrbefehle zu senden, Ultraschallsensordaten zu empfangen und darstellen und den Kamera Videostream
                         anzuzeigen.
                     </p>
@@ -110,7 +115,7 @@
                 <img src="img/RPI_Client_Android.png" class="img-fluid img-cards" alt="Card image">
                 <div class="card-block">
                     <p class="card-text"><b>Android, Java</b></p>
-                    <p class="card-text">Diese Android Application ermöglicht die Verbindung zu den RaspiRobot um gleichzeitig den Roboter Fahrbefehle
+                    <p class="card-text text-justify">Diese Android Application ermöglicht die Verbindung zu den RaspiRobot um gleichzeitig den Roboter Fahrbefehle
                         zu senden, Ultraschallsensordaten zu empfangen und darstellen und den Kamera Videostream anzuzeigen.
                     </p>
                     <p class="text-xs-center"><a href="https://github.com/MikeBudimon/RaspiRobotControl-Android-Client"><i class="fa fa-github fa-3x fa-projects" aria-hidden="true"></i></a>
@@ -124,7 +129,7 @@
                 <img src="img/Hangdroid.png" class="img-fluid img-cards" alt="Card image">
                 <div class="card-block">
                     <p class="card-text"><b>Android, Java</b></p>
-                    <p class="card-text">Hangdroid ist ein Android Klon von den berühmten Spiel Hangman bzw. Hängemännchen.</p>
+                    <p class="card-text text-justify">Hangdroid ist ein Android Klon von den berühmten Spiel Hangman bzw. Hängemännchen.</p>
                     <p class="text-xs-center"><a href="https://github.com/MikeBudimon/HangDroid"><i class="fa fa-github fa-3x fa-projects" aria-hidden="true"></i></a>
                     </p>
                 </div>
@@ -136,7 +141,7 @@
                 <img src="img/MyPortfolio.png" class="img-fluid img-cards" alt="Card image">
                 <div class="card-block">
                     <p class="card-text"><b>HTML, CSS, Bootstrap</b></p>
-                    <p class="card-text">Das ist meine "Work-in-Progress" Portfolio Website die meine Projekte darstellt und im späteren Verlauf
+                    <p class="card-text text-justify">Das ist meine "Work-in-Progress" Portfolio Website die meine Projekte darstellt und im späteren Verlauf
                         erweitert und aktualisiert wird.</p>
                     <p class="text-xs-center">
                         <a href="https://github.com/MikeBudimon/MikeBudimon-Portfolio-Site"><i class="fa fa-github fa-3x fa-projects" aria-hidden="true"></i></a>
@@ -148,20 +153,24 @@
     <!-- Kontakt section -->
     <div id="kontakt" class="container-fluid bg-2">
         <div class="container">
-            <h1 class="margin-bottom text-xs-center">Kontakt</h1>
-            <div class="row text-xs-center">
+            <h1 class="margin-bottom text-xs-center">Kontakt
+                <hr class="small">
+            </h1>
+            <div class="row">
                 <a href="mailto:michalwagner1993@gmail.com"><i class="fa fa-links fa-envelope fa-3x col-md-1 offset-md-4" aria-hidden="true"></i></a>
                 <a href="https://github.com/MikeBudimon"><i class="fa fa-links fa-github fa-3x col-md-1" aria-hidden="true"></i></a>
                 <a href="https://www.linkedin.com/in/michal-wagner-02a713125?trk=hp-identity-name"><i class="fa fa-links fa-linkedin fa-3x col-md-1" aria-hidden="true"></i></a>
                 <a href="https://www.xing.com/profile/Michal_Wagner2?sc_o=mxb_p"><i class="fa fa-links fa-xing fa-3x col-md-1" aria-hidden="true"></i></a>
             </div>
-            <p class="text-xs-center"><b>EMail: michalwagner1993@gmail.com</b></p>
+            <p class="text-xs-center"><b>Email: michalwagner1993@gmail.com</b></p>
         </div>
     </div>
     <!-- Footer -->
     <footer class="navbar text-xs-center bg-4 text-muted">
+        <hr>
         <p>Copyright &#169; 2017 Michal Wagner</p>
     </footer>
+
     <script src="https://use.fontawesome.com/05a755ff73.js" async></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js " integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7 "
         crossorigin="anonymous "></script>
@@ -169,6 +178,7 @@
         crossorigin="anonymous "></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js " integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK "
         crossorigin="anonymous "></script>
+    <script src="js/portfolio.js"></script>
 </body>
 
 </html>
