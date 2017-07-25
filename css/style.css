@@ -68,12 +68,12 @@ footer.bg-4.navbar {
     max-width: 300px;
 }
 
-#home {
-    padding-top: 12.5em;
-    padding-bottom: 12.5em;
+#willkommen {
+    padding-top: 10.5em;
+    padding-bottom: 10.5em;
 }
 
-#home h1 {
+#willkommen h1 {
     font-size: 90px;
 }
 
@@ -116,9 +116,16 @@ hr.small {
     h2 {
         font-size: 1.5em;
     }
-    #home {
+    #willkommen {
         padding-top: 6.1em;
         padding-bottom: 6.1em;
+    }
+    #willkommen h1 {
+        font-size: 2.5em;
+    }
+    #img-myself {
+        width: 100%;
+        height: auto;
     }
 }
 
