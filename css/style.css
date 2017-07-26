@@ -7,21 +7,21 @@ p.text-justify {
 }
 
 .bg-1 {
-    background-color: #1abc9c;
-    /* Green */
+    background-image: url("../img/desk.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
     color: #ffffff;
-    /* Font */
 }
 
 .bg-2 {
     background-color: #474e5d;
-    /* Dark Blue */
     color: #ffffff;
 }
 
 .bg-3 {
     background-color: #1abc9c;
-    /* White */
     color: #555555;
 }
 
@@ -77,6 +77,21 @@ footer.bg-4.navbar {
     font-size: 90px;
 }
 
+#willkommen .btn {
+    margin-top: 4.5em;
+    background-color: #1abc9c;
+    border: 2px solid #1abc9c;
+}
+
+#willkommen a:hover {
+    background-color: #14967c;
+}
+
+#about p {
+    position: relative;
+    transform: translateY(50%);
+}
+
 .fa.fa-projects {
     color: #555555;
 }
@@ -115,13 +130,6 @@ hr.small {
     }
     h2 {
         font-size: 1.5em;
-    }
-    #willkommen {
-        padding-top: 6.1em;
-        padding-bottom: 6.1em;
-    }
-    #willkommen h1 {
-        font-size: 2.5em;
     }
     #img-myself {
         width: 100%;
