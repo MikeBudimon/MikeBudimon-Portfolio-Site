@@ -10,8 +10,8 @@ p.text-justify {
     background-image: url("../img/desk.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
+    /*-webkit-background-size: cover;
+    background-size: cover; */
     color: #ffffff;
     text-shadow: 2px 2px black;
     background-attachment: fixed;
@@ -132,7 +132,7 @@ hr.hr-small {
 }
 
 
-/* if width is smaller than 768px */
+/* if width is smaller than 992px */
 
 @media (max-width: 992px) {
     .card {
@@ -151,10 +151,6 @@ hr.hr-small {
     #willkommen .btn {
         margin-top: 1em;
     }
-    /* test */
-    .bg-2 {
-        background-color: black;
-    }
 }
 
 
@@ -167,5 +163,8 @@ hr.hr-small {
     #about p {
         position: relative;
         transform: translateY(50%);
+    }
+    #willkommen .btn {
+        margin-bottom: 14em;
     }
 }
