@@ -11,8 +11,9 @@ p.text-justify {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
     color: #ffffff;
+    text-shadow: 2px 2px black;
+    background-attachment: fixed;
 }
 
 .bg-2 {
@@ -22,7 +23,7 @@ p.text-justify {
 
 .bg-3 {
     background-color: #1abc9c;
-    color: #555555;
+    color: white;
 }
 
 footer.bg-4.navbar {
@@ -30,10 +31,6 @@ footer.bg-4.navbar {
     letter-spacing: 0px;
     font-size: 90%;
     padding-bottom: 0;
-}
-
-#portfolio h1 {
-    color: #ffffff;
 }
 
 .container-fluid.bg-1,
@@ -46,7 +43,10 @@ footer.bg-4.navbar {
 .navbar {
     padding-top: 15px;
     padding-bottom: 15px;
-    letter-spacing: 3px;
+}
+
+.navbar-nav li {
+    padding-right: 0.5em;
 }
 
 .navbar-nav li a:hover {
@@ -66,6 +66,7 @@ footer.bg-4.navbar {
     height: auto;
     width: auto;
     max-width: 300px;
+    border: 1px solid white;
 }
 
 #willkommen {
@@ -78,18 +79,17 @@ footer.bg-4.navbar {
 }
 
 #willkommen .btn {
-    margin-top: 4.5em;
+    margin-top: 3.5em;
     background-color: #1abc9c;
     border: 2px solid #1abc9c;
 }
 
 #willkommen a:hover {
-    background-color: #14967c;
+    box-shadow: 4px 4px 8px black;
 }
 
-#about p {
-    position: relative;
-    transform: translateY(50%);
+#willkommen a:active {
+    background-color: #12876f;
 }
 
 .fa.fa-projects {
@@ -99,6 +99,14 @@ footer.bg-4.navbar {
 .fa.fa-links {
     margin-bottom: 30px;
     color: #ffffff;
+}
+
+#skills .fa-stack-1x {
+    color: #474e5d;
+}
+
+.skills-item strong {
+    font-size: 1.4em;
 }
 
 a i:hover {
@@ -114,11 +122,12 @@ a i:hover {
 .card {
     margin-right: 10px;
     height: 49em;
+    color: #555555;
 }
 
-hr.small {
+hr.hr-small {
     max-width: 100px;
-    border-color: inherit;
+    border-color: white;
 }
 
 
@@ -135,6 +144,12 @@ hr.small {
         width: 100%;
         height: auto;
     }
+    .bg-1 {
+        background-attachment: scroll;
+    }
+    #willkommen .btn {
+        margin-top: 1em;
+    }
 }
 
 
@@ -143,5 +158,12 @@ hr.small {
 @media screen and (min-width: 992px) {
     .img-cards {
         height: 350px;
+    }
+    #about p {
+        position: relative;
+        transform: translateY(50%);
+    }
+    #willkommen .btn {
+        margin-bottom: 14em;
     }
 }
