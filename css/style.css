@@ -7,14 +7,15 @@ p.text-justify {
 }
 
 .bg-1 {
-    background-image: url("../img/desk.jpg");
+    background-image: url(../img/desk.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    /*-webkit-background-size: cover;
-    background-size: cover; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
     color: #ffffff;
     text-shadow: 2px 2px black;
-    background-attachment: fixed;
 }
 
 .bg-2 {
@@ -39,11 +40,6 @@ footer.bg-4.navbar {
 .container-fluid.bg-3 {
     padding-top: 70px;
     padding-bottom: 70px;
-}
-
-.navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
 }
 
 .navbar-nav li {
@@ -145,11 +141,14 @@ hr.hr-small {
         width: 100%;
         height: auto;
     }
-    .bg-1 {
-        background-attachment: scroll;
+    #willkommen {
+        padding-top: 7em;
     }
     #willkommen .btn {
         margin-top: 1em;
+    }
+    .container-fluid.bg-1 {
+        padding-top: 10px;
     }
 }
 
