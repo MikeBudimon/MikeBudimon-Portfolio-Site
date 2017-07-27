@@ -15,7 +15,6 @@ p.text-justify {
     color: #ffffff;
     text-shadow: 2px 2px black;
     background-attachment: fixed;
-    height: 100vh;
 }
 
 .bg-2 {
@@ -151,6 +150,10 @@ hr.hr-small {
     }
     #willkommen .btn {
         margin-top: 1em;
+    }
+    /* test */
+    .bg-2 {
+        background-color: black;
     }
 }
 
