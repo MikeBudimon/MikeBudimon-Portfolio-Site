@@ -2,8 +2,8 @@ body {
     position: relative;
 }
 
-p.text-justify {
-    text-align: justify;
+p.text-left {
+    text-align: left;
 }
 
 .bg-1 {
@@ -42,13 +42,41 @@ footer.bg-4.navbar {
     padding-bottom: 70px;
 }
 
+.navbar a {
+    background: transparent;
+    color: white;
+    transition: 100ms;
+    font-size: 1.2em;
+}
+
+.navbar .navbar-brand {
+    font-weight: 700;
+    font-size: 1.4em;
+}
+
 .navbar-nav li {
     padding-right: 0.5em;
+    font-weight: 400;
 }
 
 .navbar-nav li a:hover {
     color: #1abc9c !important;
     box-shadow: inset 0 -5px 0 0 #1abc9c;
+    transition: 500ms;
+}
+
+.navbar-scroll {
+    background: rgba(0, 0, 0, 0.5);
+    transition: 100ms;
+}
+
+.navbar-scroll .navbar-brand {
+    font-size: 1.2em;
+}
+
+.navbar-scroll a {
+    transition: 100ms;
+    font-size: 1em;
 }
 
 .margin-bottom {
@@ -83,6 +111,7 @@ footer.bg-4.navbar {
 
 #willkommen a:hover {
     box-shadow: 4px 4px 8px black;
+    transition: 250ms;
 }
 
 #willkommen a:active {
@@ -149,6 +178,9 @@ hr.hr-small {
     }
     .container-fluid.bg-1 {
         padding-top: 10px;
+    }
+    .navbar {
+        background: rgba(0, 0, 0, 0.5);
     }
 }
 
