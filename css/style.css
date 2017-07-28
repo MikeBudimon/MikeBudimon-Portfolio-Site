@@ -16,6 +16,8 @@ p.text-left {
     -o-background-size: cover;
     color: #ffffff;
     text-shadow: 2px 2px black;
+    background-attachment: fixed;
+    height: 100vh;
 }
 
 .bg-2 {
@@ -42,6 +44,10 @@ footer.bg-4.navbar {
     padding-bottom: 70px;
 }
 
+.navbar-toggler {
+    color: white;
+}
+
 .navbar a {
     background: transparent;
     color: white;
@@ -49,20 +55,16 @@ footer.bg-4.navbar {
     font-size: 1.2em;
 }
 
-.navbar .navbar-brand {
+.navbar-nav li a:hover {
+    color: #d9831e !important;
+    box-shadow: inset 0 -5px 0 0 #d9831e;
+    transition: 500ms;
+}
+
+#navbar-main .navbar-brand {
     font-weight: 700;
     font-size: 1.4em;
-}
-
-.navbar-nav li {
-    padding-right: 0.5em;
-    font-weight: 400;
-}
-
-.navbar-nav li a:hover {
-    color: #1abc9c !important;
-    box-shadow: inset 0 -5px 0 0 #1abc9c;
-    transition: 500ms;
+    color: #d9831e;
 }
 
 .navbar-scroll {
@@ -70,8 +72,11 @@ footer.bg-4.navbar {
     transition: 100ms;
 }
 
-.navbar-scroll .navbar-brand {
+#navbar-main.navbar-scroll .navbar-brand {
+    font-weight: 500;
     font-size: 1.2em;
+    transition: 100ms;
+    color: white;
 }
 
 .navbar-scroll a {
@@ -83,15 +88,14 @@ footer.bg-4.navbar {
     margin-bottom: 45px;
 }
 
-.margin-bottom-form {
-    margin-bottom: 1rem;
-}
-
 #img-myself {
     height: auto;
     width: auto;
     max-width: 300px;
-    border: 1px solid white;
+}
+
+.orange-font {
+    color: #d9831e;
 }
 
 #willkommen {
@@ -101,21 +105,11 @@ footer.bg-4.navbar {
 
 #willkommen h1 {
     font-size: 90px;
+    margin-bottom: 0.4em;
 }
 
-#willkommen .btn {
-    margin-top: 3.5em;
-    background-color: #1abc9c;
-    border: 2px solid #1abc9c;
-}
-
-#willkommen a:hover {
-    box-shadow: 4px 4px 8px black;
-    transition: 250ms;
-}
-
-#willkommen a:active {
-    background-color: #12876f;
+#willkommen h2 {
+    margin-bottom: 0.8em;
 }
 
 .fa.fa-projects {
@@ -173,14 +167,14 @@ hr.hr-small {
     #willkommen {
         padding-top: 7em;
     }
-    #willkommen .btn {
-        margin-top: 1em;
-    }
     .container-fluid.bg-1 {
         padding-top: 10px;
     }
     .navbar {
         background: rgba(0, 0, 0, 0.5);
+    }
+    .bg-1 {
+        background-attachment: scroll;
     }
 }
 
@@ -194,8 +188,5 @@ hr.hr-small {
     #about p {
         position: relative;
         transform: translateY(50%);
-    }
-    #willkommen .btn {
-        margin-bottom: 14em;
     }
 }
