@@ -51,7 +51,7 @@ footer.bg-4.navbar {
 .navbar a {
     background: transparent;
     color: white;
-    transition: 100ms;
+    transition: 500ms;
     font-size: 1.2em;
 }
 
@@ -69,18 +69,18 @@ footer.bg-4.navbar {
 
 .navbar-scroll {
     background: rgba(0, 0, 0, 0.5);
-    transition: 100ms;
+    transition: 500ms;
 }
 
 #navbar-main.navbar-scroll .navbar-brand {
     font-weight: 500;
     font-size: 1.2em;
-    transition: 100ms;
+    transition: 500ms;
     color: white;
 }
 
 .navbar-scroll a {
-    transition: 100ms;
+    transition: 500ms;
     font-size: 1em;
 }
 
@@ -96,6 +96,14 @@ footer.bg-4.navbar {
 
 .orange-font {
     color: #d9831e;
+}
+
+#start.btn {
+    margin-top: 2em;
+}
+
+a#start:hover {
+    background-color: #d9831e;
 }
 
 #willkommen {
@@ -130,7 +138,7 @@ footer.bg-4.navbar {
 }
 
 a i:hover {
-    color: #1abc9c !important;
+    color: #d9831e !important;
 }
 
 .img-cards {
@@ -143,11 +151,37 @@ a i:hover {
     margin-right: 10px;
     height: 49em;
     color: #555555;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 300ms;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 hr.hr-small {
     max-width: 100px;
     border-color: white;
+}
+
+a#scroll-to-top-link {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 0;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+    touch-action: manipulation;
+}
+
+a#scroll-to-top-link:hover {
+    background-color: #555;
 }
 
 
@@ -165,7 +199,7 @@ hr.hr-small {
         height: auto;
     }
     #willkommen {
-        padding-top: 7em;
+        padding-top: 4em;
     }
     .container-fluid.bg-1 {
         padding-top: 10px;

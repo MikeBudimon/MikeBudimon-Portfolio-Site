@@ -2,7 +2,7 @@ $(document).ready(function () {
     /**
      * Smooth scrolling on links
      */
-    var scrollLink = $('#exCollapsingNavbar a, #willkommen a');
+    var scrollLink = $('#exCollapsingNavbar a, #start, #scroll-to-top-link');
     scrollLink.on('click', function (event) {
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== '') {
@@ -28,8 +28,10 @@ $(document).ready(function () {
     $(window).scroll(function () {
         if ($(document).scrollTop() > 50) {
             $('#navbar-main').addClass('navbar-scroll');
+            document.getElementById('scroll-to-top-link').style.display = 'block';
         } else {
             $('#navbar-main').removeClass('navbar-scroll');
+            document.getElementById('scroll-to-top-link').style.display = 'none';
         }
     });
 });
