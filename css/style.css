@@ -1,5 +1,6 @@
 body {
     position: relative;
+    background-color: #474e5d;
 }
 
 p.text-left {
@@ -7,7 +8,7 @@ p.text-left {
 }
 
 .bg-1 {
-    background-image: url(../img/desk.jpg);
+    background-image: url(../images/desk.jpg);
     background-position: center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -30,7 +31,7 @@ p.text-left {
     color: white;
 }
 
-footer.bg-4.navbar {
+footer.bg-4 {
     background-color: #474e5d;
     letter-spacing: 0px;
     font-size: 90%;
@@ -124,12 +125,14 @@ a#start:hover {
     color: #555555;
 }
 
-.fa.fa-links {
+#kontakt .fa-stack {
     margin-bottom: 30px;
     color: #ffffff;
+    font-size: 2.5em;
 }
 
-#skills .fa-stack-1x {
+#skills .fa-stack-1x,
+#kontakt .fa-stack-1x {
     color: #474e5d;
 }
 
@@ -209,6 +212,9 @@ a#scroll-to-top-link:hover {
     }
     .bg-1 {
         background-attachment: scroll;
+    }
+    #kontakt div .row div {
+        margin-right: 1em;
     }
 }
 
