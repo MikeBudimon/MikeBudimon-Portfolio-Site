@@ -49,11 +49,21 @@ footer.bg-4 {
     color: white;
 }
 
+.navbar {
+    height: 4.5em;
+    padding-top: 1em;
+}
+
 .navbar a {
     background: transparent;
     color: white;
     transition: 500ms;
     font-size: 1.2em;
+    margin-right: 0.7em;
+}
+
+#navbar-main>div>button {
+    color: white;
 }
 
 .navbar-nav li a:hover {
@@ -69,7 +79,8 @@ footer.bg-4 {
 }
 
 .navbar-scroll {
-    background: rgba(0, 0, 0, 0.5);
+    background: white;
+    opacity: 0.95;
     transition: 500ms;
 }
 
@@ -77,12 +88,13 @@ footer.bg-4 {
     font-weight: 500;
     font-size: 1.2em;
     transition: 500ms;
-    color: white;
+    color: black;
 }
 
 .navbar-scroll a {
     transition: 500ms;
     font-size: 1em;
+    color: black;
 }
 
 .margin-bottom {
@@ -142,6 +154,10 @@ a#start:hover {
 
 a i:hover {
     color: #d9831e !important;
+}
+
+.box-shadow {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .img-cards {
@@ -207,14 +223,20 @@ a#scroll-to-top-link:hover {
     .container-fluid.bg-1 {
         padding-top: 10px;
     }
-    .navbar {
-        background: rgba(0, 0, 0, 0.5);
-    }
     .bg-1 {
         background-attachment: scroll;
     }
     #kontakt div .row div {
         margin-right: 1em;
+    }
+    #navbar-main.navbar-scroll>div>button {
+        color: black;
+    }
+    #navbar-main div.container-fluid {
+        background: black;
+    }
+    #navbar-main.navbar-scroll div.container-fluid {
+        background: white;
     }
 }
 

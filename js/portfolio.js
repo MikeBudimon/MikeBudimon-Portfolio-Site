@@ -28,9 +28,11 @@ $(document).ready(function () {
     $(window).scroll(function () {
         if ($(document).scrollTop() > 50) {
             $('#navbar-main').addClass('navbar-scroll');
+            $('#navbar-main').addClass('box-shadow');
             document.getElementById('scroll-to-top-link').style.display = 'block';
         } else {
             $('#navbar-main').removeClass('navbar-scroll');
+            $('#navbar-main').removeClass('box-shadow');
             document.getElementById('scroll-to-top-link').style.display = 'none';
         }
     });
