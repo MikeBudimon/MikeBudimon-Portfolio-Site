@@ -50,14 +50,14 @@ footer.bg-4 {
 }
 
 .navbar {
-    height: 4.5em;
+    height: 4.3em;
     padding-top: 1em;
 }
 
 .navbar a {
     background: transparent;
     color: white;
-    transition: 500ms;
+    transition: 100ms;
     font-size: 1.2em;
     margin-right: 0.7em;
 }
@@ -81,13 +81,11 @@ footer.bg-4 {
 .navbar-scroll {
     background: white;
     opacity: 0.95;
-    transition: 500ms;
 }
 
 #navbar-main.navbar-scroll .navbar-brand {
     font-weight: 500;
     font-size: 1.2em;
-    transition: 500ms;
     color: black;
 }
 
@@ -141,6 +139,10 @@ a#start:hover {
     margin-bottom: 30px;
     color: #ffffff;
     font-size: 2.5em;
+}
+
+#kontakt button {
+    margin-bottom: 80px;
 }
 
 #skills .fa-stack-1x,
