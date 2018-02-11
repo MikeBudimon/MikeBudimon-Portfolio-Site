@@ -1,4 +1,5 @@
-$(document).ready(function () {
+document.addEventListener("DOMContentLoaded", function (event) {
+
     /**
      * Smooth scrolling on links
      */
@@ -25,15 +26,16 @@ $(document).ready(function () {
     /**
      * Animated scrolling navigation bar
      */
-    $(window).scroll(function () {
-        if ($(document).scrollTop() > 50) {
-            $('#navbar-main').addClass('navbar-scroll');
-            $('#navbar-main').addClass('box-shadow');
+    document.body.onscroll = function () {
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        if (scrollTop > 50) {
+            document.getElementById('navbar-main').classList.add('navbar-scroll');
+            document.getElementById('navbar-main').classList.add('box-shadow');
             document.getElementById('scroll-to-top-link').style.display = 'block';
         } else {
-            $('#navbar-main').removeClass('navbar-scroll');
-            $('#navbar-main').removeClass('box-shadow');
+            document.getElementById('navbar-main').classList.remove('navbar-scroll');
+            document.getElementById('navbar-main').classList.remove('box-shadow');
             document.getElementById('scroll-to-top-link').style.display = 'none';
         }
-    });
+    }
 });
