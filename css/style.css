@@ -4,7 +4,7 @@ body {
 }
 
 .font-lobster {
-  font-family: "Lobster", cursive;
+  font-family: 'Lobster', cursive;
 }
 
 #about > div > p.text-left {
@@ -119,6 +119,8 @@ footer.bg-4 {
 }
 
 #img-myself {
+  display: block;
+  margin: 4rem auto;
   height: auto;
   width: auto;
   max-width: 300px;
